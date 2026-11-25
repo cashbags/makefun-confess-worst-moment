@@ -12,6 +12,9 @@ ENTRY = (
     "and only learned Greg had never existed when security asked who had let him in."
 )
 
+# Gate: /output/entry.txt must be 1-200 chars of UTF-8 text (RULES.txt, "The gate").
+assert 1 <= len(ENTRY) <= 200
+
 
 def main():
     os.makedirs("/output", exist_ok=True)
