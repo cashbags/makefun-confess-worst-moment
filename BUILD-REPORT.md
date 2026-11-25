@@ -11,8 +11,8 @@
 - Determinism: `python3 main.py` run twice, no network. Both runs sha256
   `a8bccfc12a7f742257e8b067e1c814d6066d949e54c6416c4ee069f3b1a187a9` — byte-identical.
   Output `/output/entry.txt` is 155 chars, UTF-8, within the 1–200 gate.
-- Entry tree: 6,133 bytes before this file; total under the 8192-byte cap
-  (see verification in the build log).
+- Entry tree: under the 8192-byte cap at every check (the kit check prints the
+  exact total; first check measured 7,767 bytes for the 5 files).
 - Badges: all three live make.fun badge URLs verified HTTP 200 with curl
   before finishing (competition svg, rank.svg, reward.svg). No shields.io badges.
 - No image artifact required (grepped RULES.txt for screenshot/image — none).
